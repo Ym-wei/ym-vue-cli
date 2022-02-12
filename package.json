@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "bootstrap": "yarn && lerna bootstrap",
+    "clean:package": "lerna clean -y",
+    "rebuild": "lerna clean -y && lerna bootstrap",
+    "create": "node packages/zhu-cli/bin/vue.js create hello11"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
